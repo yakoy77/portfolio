@@ -1,0 +1,185 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahongir Sherboboyev | Portfolio</title>
+  
+    <!-- BMW logo favicon -->
+    <link rel="icon" href="favicon.png" type="image/png" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+<body class="bg-gray-900 text-white font-poppins" id="body">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 shadow-lg fixed w-full top-0 z-20">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Jahongir Sherboboyev</h1>
+      <div class="flex items-center space-x-4 md:space-x-6">
+        <div class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-blue-400 transition">Men haqimda</a>
+          <a href="#projects" class="hover:text-blue-400 transition">Ishlarim</a>
+          <a href="#services" class="hover:text-blue-400 transition">Xizmatlar</a>
+          <a href="#blog" class="hover:text-blue-400 transition">Blog</a>
+          <a href="#contact" class="hover:text-blue-400 transition">Kontakt</a>
+        </div>
+        <select id="language" class="bg-gray-700 text-white border border-gray-600 rounded p-1">
+          <option value="" disabled selected>Tilni tanlash</option>
+          <option value="uz">O‘zbek</option>
+          <option value="en">English</option>
+        </select>
+        <button id="theme-toggle" class="text-2xl"><i class="fas fa-moon"></i></button>
+        <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 flex flex-col items-center space-y-4 py-4">
+      <a href="#about" class="hover:text-blue-400">Men haqimda</a>
+      <a href="#projects" class="hover:text-blue-400">Ishlarim</a>
+      <a href="#services" class="hover:text-blue-400">Xizmatlar</a>
+      <a href="#blog" class="hover:text-blue-400">Blog</a>
+      <a href="#contact" class="hover:text-blue-400">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-800">
+    <div class="text-center animate-hero">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Jahongir Sherboboyev</h1>
+      <p class="text-lg md:text-xl">Dasturchi | Python ishqibozi</p>
+      <div class="mt-6">
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">Bog‘lanish</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Men haqimda</h2>
+      <div class="max-w-3xl mx-auto text-center animate-fade-in">
+        <img src="profile.jpg" alt="Jahongir Sherboboyev" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 object-cover">
+        <p class="mb-2"><strong>Ism:</strong> Jahongir Sherboboyev</p>
+        <p class="mb-2"><strong>Tug‘ilgan yil:</strong> 31-dekabr 2008</p>
+        <p class="mb-2"><strong>Manzil:</strong> Samarqand viloyati, Urgut tumani, So‘fiyon mahallasi</p>
+        <p class="mb-2"><strong>Telefon:</strong> +998 97 393 43 34</p>
+        <p class="mb-2"><strong>Email:</strong> <a href="mailto:jahongirsherboboyev2@gmail.com" class="text-blue-400">jahongirsherboboyev2@gmail.com</a></p>
+        <p class="mb-2"><strong>Hobbi:</strong> PUBG o‘ynash</p>
+        <p class="mb-2"><strong>Qiziqish va o‘qish:</strong> Ingliz tili (B1), IT (Python)</p>
+        <p class="mb-2"><strong>Ijtimoiy tarmoqlar:</strong>
+          <a href="https://t.me/real_yakoy" class="text-blue-400 mx-2"><i class="fab fa-telegram-plane"></i> Telegram</a>
+          <a href="https://www.instagram.com/real_yakoy/" class="text-blue-400 mx-2"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Ishlarim</h2>
+      <div class="flex justify-center space-x-4 mb-12 flex-wrap gap-2">
+        <button class="filter-btn bg-blue-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-blue-600 transition" data-filter="all">Hammasi</button>
+        <button class="filter-btn bg-gray-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-blue-600 transition" data-filter="python">Python</button>
+        <button class="filter-btn bg-gray-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-blue-600 transition" data-filter="other">Boshqa</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition flex flex-col items-center" data-category="python">
+          <h3 class="text-xl md:text-2xl font-bold mb-2 text-center">Python loyihasi 1</h3>
+          <p class="text-gray-300 text-center mb-4">Ma’lumotlarni tahlil qilish uchun Python vositasi.</p>
+          <a href="#" class="text-blue-400 mt-auto inline-block">Batafsil</a>
+        </div>
+        <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition flex flex-col items-center" data-category="python">
+          <h3 class="text-xl md:text-2xl font-bold mb-2 text-center">Python loyihasi 2</h3>
+          <p class="text-gray-300 text-center mb-4">Veb-sayt ma’lumotlarini yig‘uvchi scraper dasturi.</p>
+          <a href="#" class="text-blue-400 mt-auto inline-block">Batafsil</a>
+        </div>
+        <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition flex flex-col items-center" data-category="other">
+          <h3 class="text-xl md:text-2xl font-bold mb-2 text-center">Veb-sayt loyihasi</h3>
+          <p class="text-gray-300 text-center mb-4">HTML va CSS bilan yaratilgan portfolio.</p>
+          <a href="#" class="text-blue-400 mt-auto inline-block">Batafsil</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Xizmatlar</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Python dasturlash</h3>
+          <p class="text-gray-300">Ma’lumotlar tahlili, avtomatlashtirish va veb-dasturlar.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Veb-dasturlash</h3>
+          <p class="text-gray-300">HTML, CSS, JavaScript bilan zamonaviy saytlar.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Konsultatsiya</h3>
+          <p class="text-gray-300">IT va dasturlash bo‘yicha professional maslahatlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Blog</h2>
+      <div class="max-w-3xl mx-auto">
+        <article class="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Python bo‘yicha boshlang‘ich qo‘llanma</h3>
+          <p class="text-gray-300">Python dasturlash tilini o‘rganish bo‘yicha birinchi qadamlar.</p>
+          <a href="#" class="text-blue-400 mt-4 inline-block">O‘qish</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Kontakt</h2>
+      <form id="contact-form" class="max-w-lg mx-auto">
+        <div class="mb-6">
+          <label for="name" class="block mb-2 text-lg">Ism</label>
+          <input type="text" id="name" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-lg">Email</label>
+          <input type="email" id="email" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-lg">Xabar</label>
+          <textarea id="message" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white" rows="5" required></textarea>
+        </div>
+        <div class="flex space-x-4">
+          <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">Yuborish</button>
+          <button id="call-me" type="button" class="bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-600 transition">Call Me</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Call Me Modal -->
+  <div id="call-me-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-30">
+    <div class="bg-gray-800 p-6 rounded-lg max-w-sm w-full text-center">
+      <h3 class="text-xl font-bold mb-4">Bog‘lanish usullari</h3>
+      <p class="mb-2"><a href="https://t.me/real_yakoy" class="text-blue-400"><i class="fab fa-telegram-plane"></i> Telegram</a></p>
+      <p class="mb-2"><a href="https://www.instagram.com/real_yakoy/" class="text-blue-400"><i class="fab fa-instagram"></i> Instagram</a></p>
+      <p class="mb-2"><a href="mailto:jahongirsherboboyev2@gmail.com" class="text-blue-400"><i class="fas fa-envelope"></i> Email</a></p>
+      <p class="mb-4"><a href="tel:+998973934334" class="text-blue-400"><i class="fas fa-phone"></i> +998 97 393 43 34</a></p>
+      <button id="close-modal" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">Yopish</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
