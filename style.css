@@ -146,6 +146,98 @@
     display: flex;
   }
   
+  /* =========================
+   FOOTER STYLES
+========================= */
+._q7tZ9kPz {
+  background-color: #1f2937; /* Qora-kulrang fon */
+  padding: 40px 20px;
+  color: #f9fafb;
+  font-size: 14px;
+}
+
+._q7tZ9kPz__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  ._q7tZ9kPz__container {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+._q7tZ9kPz__brand {
+  flex: 1;
+}
+
+._q7tZ9kPz__brand h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+._q7tZ9kPz__brand p {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+._q7tZ9kPz__logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Aylana shakl */
+  object-fit: cover;
+  border: 2px solid #2563eb;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+._q7tZ9kPz__logo:hover {
+  transform: scale(1.1) rotate(360deg);
+  box-shadow: 0px 0px 15px rgba(37, 99, 235, 0.7);
+}
+
+._q7tZ9kPz__links,
+._q7tZ9kPz__contact {
+  flex: 1;
+}
+
+._q7tZ9kPz__links h3,
+._q7tZ9kPz__contact h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+._q7tZ9kPz__links a,
+._q7tZ9kPz__contact a {
+  display: block;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+._q7tZ9kPz__links a:hover,
+._q7tZ9kPz__contact a:hover {
+  color: #2563eb;
+}
+
+._q7tZ9kPz__bottom {
+  text-align: center;
+  border-top: 1px solid #374151;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+  
   /* Responsive */
   @media (max-width: 768px) {
     .grid-cols-3 {
